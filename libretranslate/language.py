@@ -34,7 +34,7 @@ def detect_languages(text):
     candidates = []
     for t in text:
         try:
-            d = Detector(lang_codes).detect(t)
+            d = Detector(lang_codes).detect(t[:19]) # just use lldetect for now, which seems working better for some chinese sentences.
             for i in range(len(d)):
                 d[i].text_length = len(t)
             candidates.extend(d)

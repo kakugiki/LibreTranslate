@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Hatch",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "hatch",
+            "args": ["run", "dev", "--debug"],
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}
